@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Roboto+Mono:wght@100;300&display=swap');
+
+
+.main__welcome {
+
+    border: red dotted;
+    margin-top: 1rem;
+    background-color: black;
+}
+
+.main_welcome_image__container {
+    display: inline-block;
+    border: red dotted;
+    width: 50%;
+    height: 20rem;
+    margin: 0;
+    display: inline-block;
+
+}
+
+.main_welcome_image {
+    display: inline-block;
+    border: red dotted;
+    height: 20rem;
+    margin: 0;
+    display: inline-block;
+}
+
+.main_welcome_info {
+    display: inline-block;
+    border: red dotted;
+    height: 20rem;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+
+}
+
+.main_welcome_info__title {
+    color: red;
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 100%;
+
+}
