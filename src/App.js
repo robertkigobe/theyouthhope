@@ -8,14 +8,15 @@ import SlideGallery from "./components/slidegallery/SlideGallery";
 import Donate from "./components/donate/Donate";
 import ContactUs from "./components/contactus/ContactUs";
 import Subscribe from "./components/subscribe/Subscribe";
+import { SlideData } from "./components/slidegallery/SlideData";
 
 function App() {
   return (
-    <div className="App">
+    <div className="main">
       <Header />
       <Welcome />
       <Aboutus />
-      <SlideGallery />
+      <SlideGallery slides={SlideData}/>
       <Donate />
       <ContactUs/>
       <Subscribe/>
