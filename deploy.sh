@@ -1,9 +1,12 @@
-echo "Updating Git"
 
-echo "git checkout -b announcements"
+name="adding_flex"
+echo "git checkout -b "$name
+git checkout -b $name
 git add .
-git commit -m "announcements"
-git push --set-upstream origin announcements
+git commit -a -m $name
+git push --set-upstream origin $name
+git checkout main
+git pull
 
 echo "Building app"
 npm run build 

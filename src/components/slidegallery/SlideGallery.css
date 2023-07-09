@@ -1,12 +1,14 @@
 
 .main-carousel__body {
     position: relative;
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    left: 0;
+    padding: 0.5rem 1rem;
     display: flex;
-    justify-content: center;
+    background: black;
     align-items: center;
-    margin: 0;
+    justify-content: space-between;
+    color: black;
 }
 
 .image {

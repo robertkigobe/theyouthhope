@@ -1,25 +1,53 @@
-import React from 'react';
-import './Header.css';
-import logo from '../../images/logo192.png';
+import React from "react";
+import "./Header.css";
+import logo from "../../images/logo192.png";
 
-const Header = () =>{
-    return(<div className='main__header'>
-        <ul className='nav__items'>
-        <li className='nav__item'>
-        <img className='nav__item__logo' src={logo} alt="alt" />
-        </li>
-            <li className='nav__item'>HOME</li>
-            <li className='nav__item'>WHO WE ARE</li>
-            <li className='nav__item'>WHAT WE DO</li>
-            <li className='nav__item'>SUPPORT US</li>
-            <li className='nav__item'>GALLERY</li>
-            <li className='nav__item'>CONTACT US</li>
-            <li className='nav__item_button'>DONATE</li>
-
-
-
+const Header = () => {
+  return (
+    <>
+      <header className="main-header">
+        <div>
+          <button className="toggle-button">
+            <span className="toggle-button__bar"></span>
+            <span className="toggle-button__bar"></span>
+            <span className="toggle-button__bar"></span>
+          </button>
+          <a href="#" className="main-header__brand">
+            <img src={logo} alt="alt" />
+          </a>
+        </div>
+        <nav className="main-nav">
+          <ul className="main-nav__items">
+            <li className="main-nav__item">
+              <a href="#">WHO WE ARE</a>
+            </li>
+            <li className="main-nav__item">
+              <a href="#">WHAT WE DO</a>
+            </li>
+            <li className="main-nav__item">
+              <a href="#">GALLERY</a>
+            </li>
+            <li className="main-nav__item">
+              <a href="#">SUPPORT US</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <nav className="mobile-nav">
+        <ul className="mobile-nav__items">
+          <li className="mobile-nav__item">
+            <a href="packages/index.html">Packages</a>
+          </li>
+          <li className="mobile-nav__item">
+            <a href="customers/index.html">Customers</a>
+          </li>
+          <li className="mobile-nav__item mobile-nav__item--cta">
+            <a href="start-hosting/index.html">Start Hosting</a>
+          </li>
         </ul>
-    </div>);
-}
+      </nav>
+    </>
+  );
+};
 
 export default Header;
